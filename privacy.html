@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="description" content="Library Feedのプライバシーポリシー。保存データ、Google Drive同期、外部通信と利用者による管理について。">
+  <meta name="theme-color" content="#399869">
+  <title>プライバシーポリシー — Library Feed</title>
+  <style>
+    :root{color-scheme:light dark;--accent:#399869;--bg:#f6f8f7;--paper:#fff;--text:#1c2923;--muted:#607168;--border:#e0e8e3}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.85 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif}a{color:var(--accent);text-underline-offset:3px}.wrap{max-width:800px;margin:auto;padding:28px 24px 72px}header,footer{display:flex;justify-content:space-between;align-items:center;gap:18px}header{padding-bottom:25px;border-bottom:1px solid var(--border)}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-size:16px;font-weight:800}.mark{display:grid;place-items:center;width:38px;height:38px;border-radius:11px;background:var(--accent);color:#fff;font-size:22px}nav{font-size:14px}h1{font-size:clamp(27px,5vw,38px);line-height:1.4;letter-spacing:-.04em;margin:39px 0 6px}h2{font-size:19px;letter-spacing:-.02em;margin:0 0 10px}section{background:var(--paper);border:1px solid var(--border);border-radius:16px;padding:25px 29px;margin:16px 0}p{margin:0 0 11px}p:last-child{margin:0}ul{margin:0;padding-left:1.4em}li+li{margin-top:6px}.intro{color:var(--muted);margin-bottom:25px}.date{font-size:13px;color:var(--muted);margin-bottom:35px}footer{border-top:1px solid var(--border);margin-top:38px;padding-top:23px;color:var(--muted);font-size:13px;flex-wrap:wrap}@media(max-width:540px){.wrap{padding:18px 16px 48px}section{padding:22px 19px}}@media(prefers-color-scheme:dark){:root{--bg:#111914;--paper:#1b2620;--text:#e7f1e9;--muted:#a8b8ad;--border:#35463a}a{color:#7bd6a1}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="brand" href="./"><span class="mark" aria-hidden="true">L</span><span>Library Feed</span></a><nav><a href="./">ホームへ戻る</a></nav></header>
+<main>
+<h1>プライバシーポリシー</h1><p class="intro">Library Feedにおける情報の取得、保存、利用およびGoogle Drive同期について説明します。</p><p class="date">制定・最終更新：2026年10月24日</p>
+<section><h2>1. アプリの概要</h2><p>Library Feedは、漫画サイトおよびRSS・Atom等の公開更新情報を登録・確認し、既読・未読を管理するWindows向けChrome／Vivaldi拡張機能です。Google Drive同期は利用者が任意で有効にする機能です。</p></section>
+<section><h2>2. 端末内に保存する情報</h2><p>登録作品・取得元URL、取得した更新情報、既読状態、アプリと作品ごとの設定、利用者が指定した画像などをブラウザ内に保存します。これらはライブラリ管理、更新の確認、通知および設定の復元に使用します。</p></section>
+<section><h2>3. 外部サイトへの通信</h2><p>更新の取得や外部画像の表示のため、登録先のサイトや画像配信元に接続します。接続先にはIPアドレスなど、通常のWeb通信に伴う情報が伝わる場合があります。Library Feedは漫画本文や有料コンテンツの取得・配信を目的としません。</p></section>
+<section><h2>4. Google Drive同期とGoogleユーザーデータ</h2><p>利用者がGoogle同期を有効にした場合、Google OAuthによる利用者本人の許可のもと、Google Driveのアプリ専用データ領域（<code>drive.appdata</code>）にアクセスします。同期対象は登録作品、更新履歴、既読、設定、指定画像、同期操作履歴です。同じGoogleアカウントで利用する端末間のデータ統合のために使用します。</p><p>Library Feedが要求するGoogleのOAuthスコープは <code>https://www.googleapis.com/auth/drive.appdata</code> です。Google Drive全体へのアクセス権限を要求する設計ではありません。Google同期は利用者自身のアカウントに対して行い、配布元が運営するサーバーへライブラリを送信する機能は設けていません。</p><p>Googleから取得したデータは、この同期機能の提供と維持のために利用します。広告配信や第三者へのデータ販売を目的とした利用は行いません。</p></section>
+<section><h2>5. Vivaldi用の構成要素と認証情報</h2><p>VivaldiからGoogle同期を使用する際は、同梱のWindows用構成要素がGoogle認証とDrive通信を担当します。認証トークン等はWindowsユーザーに紐付いた保護機構を使って端末内に保存します。GoogleアカウントのパスワードはGoogleの認証画面で入力し、配布元へ送信するものではありません。</p></section>
+<section><h2>6. バックアップ、保持および削除</h2><p>通常のJSONバックアップには、登録作品・取得元・設定・指定画像が含まれます。記事・既読・同期操作履歴、認証情報、サイト権限、送受信台帳は含まれません。バックアップファイルの保管と削除は利用者が管理します。</p><p>Google同期をOFFにしても、端末の保存データとDrive上の既存履歴は自動削除されません。拡張機能の削除は端末内データの消失につながる場合があります。Google側でのアクセス許可の取り消しと、Drive内データの削除は別の操作です。必要な場合は利用ガイドに従って管理してください。</p></section>
+<section><h2>7. 通知</h2><p>新着通知には作品名などがWindowsの通知領域に表示される場合があります。共有画面や通知センターで第三者の目に触れる可能性があります。通知は全体または作品ごとに無効化できます。</p></section>
+<section><h2>8. 共有・第三者提供</h2><p>Library Feedには、利用者のライブラリを配布元のサーバーへ収集したり、他の利用者に公開したりする機能はありません。前記の更新元サイトへの通常通信および利用者が任意で有効化したGoogle Drive同期を除き、利用者のライブラリを配布元が第三者へ提供する仕組みは設けていません。</p></section>
+<section><h2>9. 改定・お問い合わせ</h2><p>機能やデータの取り扱いに変更が生じた場合は、本ページの内容と更新日を見直します。お問い合わせ：<a href="mailto:hiroyamahiroshi00@gmail.com">hiroyamahiroshi00@gmail.com</a></p></section>
+</main>
+<footer><span>© 2026 Hiroyama Hiroshi. Library Feed.</span><a href="./">ホーム</a></footer>
+</div>
+</body>
+</html>
