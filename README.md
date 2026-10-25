@@ -1,9 +1,16 @@
 # Library Feed
 
-**[最新版をDL](https://github.com/Hiroyamahiro/libraryfeed/releases/download/v0.5.0/LibraryFeed-0.5.0.zip)**
-
 漫画やサイトの更新をまとめて確認する、Windows用ブラウザ拡張機能です。
 Chrome、Edge、Vivaldiに対応しています。
+
+## ダウンロード
+
+> ### **[最新版をダウンロード](https://github.com/Hiroyamahiro/libraryfeed/releases/download/v0.5.0/LibraryFeed-0.5.0.zip)**
+>
+> **v0.5.0**
+>
+> [配布一覧](https://github.com/Hiroyamahiro/libraryfeed/releases) ｜ [解説](https://hiroyamahiro.github.io/libraryfeed/) ｜ [プライバシーポリシー](https://hiroyamahiro.github.io/libraryfeed/privacy.html)
+
 
 ## 導入手順
 
@@ -22,5 +29,3 @@ Chrome、Edge、Vivaldiに対応しています。
 
 同期なしでも使えます。
 
-
-[配布一覧](https://github.com/Hiroyamahiro/libraryfeed/releases) ｜ [解説](https://hiroyamahiro.github.io/libraryfeed/) ｜ [プライバシーポリシー](https://hiroyamahiro.github.io/libraryfeed/privacy.html)
