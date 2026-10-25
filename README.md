@@ -12,6 +12,5 @@
 
 Edge・VivaldiでGoogle同期を使う場合だけ、同梱の **LibraryFeedSetup.exe** を実行します。同期なしでも使えます。
 
-**[解説](https://hiroyamahiro.github.io/libraryfeed/)**
 
-[配布一覧](https://github.com/Hiroyamahiro/libraryfeed/releases) ｜ [プライバシーポリシー](https://hiroyamahiro.github.io/libraryfeed/privacy.html)
+[配布一覧](https://github.com/Hiroyamahiro/libraryfeed/releases) ｜ [解説](https://hiroyamahiro.github.io/libraryfeed/) ｜ [プライバシーポリシー](https://hiroyamahiro.github.io/libraryfeed/privacy.html)
