@@ -5,26 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow, noarchive">
   <meta name="description" content="Library Feedは、漫画サイトやRSS・Atomの更新をまとめて確認するWindows向けブラウザ拡張機能です。">
-  <meta name="theme-color" content="#399869">
+  <meta name="theme-color" content="#f7f7f7">
   <title>Library Feed — 作品の更新を、ひとつの場所に。</title>
   <style>
-    :root{color-scheme:light dark;--accent:#399869;--bg:#f6f8f7;--paper:#fff;--text:#1c2923;--muted:#607168;--border:#e0e8e3;--soft:#eaf4ee}
-    .download{display:inline-block;background:#237a5c;color:#fff;padding:13px 23px;border-radius:10px;font-weight:800;text-decoration:none;margin:12px 0 8px}.download:hover{background:#195e46}.download:focus-visible{outline:3px solid var(--text);outline-offset:4px}.steps{margin:0;padding-left:1.4em}.steps li+li{margin-top:12px}.browser-pages{display:flex;flex-wrap:wrap;gap:6px 18px;margin:12px 0}.browser-pages code{font-size:14px;overflow-wrap:anywhere}.install-tip{margin-top:16px!important}.hero .lead{margin-bottom:6px}
-    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif}a{color:var(--accent);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}.wrap{max-width:800px;margin:auto;padding:28px 24px 72px}header,footer{display:flex;justify-content:space-between;align-items:center;gap:18px}header{padding-bottom:25px;border-bottom:1px solid var(--border)}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:800;letter-spacing:-.03em}.mark{display:grid;place-items:center;width:38px;height:38px;border-radius:11px;background:var(--accent);color:#fff;font-size:22px}nav{display:flex;gap:18px;font-size:14px}.hero{padding:62px 0 45px}.eyebrow{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}h1{font-size:clamp(30px,6vw,48px);letter-spacing:-.055em;line-height:1.35;margin:12px 0 18px}h2{font-size:21px;letter-spacing:-.03em;margin:0 0 16px}.lead{font-size:18px;color:var(--muted);max-width:640px}.note{display:inline-block;margin-top:18px;background:var(--soft);border-radius:999px;color:#20663e;font-size:13px;font-weight:700;padding:5px 13px}section{background:var(--paper);border:1px solid var(--border);border-radius:16px;padding:27px 29px;margin:20px 0}p{margin:0 0 12px}p:last-child{margin:0}ul{margin:0;padding-left:1.3em}li+li{margin-top:7px}.small{font-size:14px;color:var(--muted)}footer{border-top:1px solid var(--border);margin-top:38px;padding-top:23px;color:var(--muted);font-size:13px;flex-wrap:wrap}@media(max-width:540px){.wrap{padding:18px 16px 48px}section{padding:22px 19px}.hero{padding:43px 0 27px}nav{gap:12px}}@media(prefers-color-scheme:dark){:root{--bg:#111914;--paper:#1b2620;--text:#e7f1e9;--muted:#a8b8ad;--border:#35463a;--soft:#203d2c}a{color:#7bd6a1}.note{color:#95e2b4}}
+    :root{color-scheme:light dark;--accent:#287851;--bg:#f7f7f7;--paper:#fff;--text:#252729;--muted:#65686b;--border:#e2e3e4;--soft:#f1f2f3}
+    .download{display:inline-block;background:#2e7358;color:#fff;padding:13px 23px;border-radius:10px;font-weight:800;text-decoration:none;margin:12px 0 8px}.download:hover{background:#245b46}.download:focus-visible{outline:3px solid var(--text);outline-offset:4px}.steps{margin:0;padding-left:1.4em}.steps li+li{margin-top:12px}.browser-pages{display:flex;flex-wrap:wrap;gap:6px 18px;margin:12px 0}.browser-pages code{font-size:14px;overflow-wrap:anywhere}.install-tip{margin-top:16px!important}.hero .lead{margin-bottom:6px}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif}a{color:var(--accent);text-underline-offset:3px}a:hover{text-decoration-thickness:2px}.wrap{max-width:800px;margin:auto;padding:28px 24px 72px}header,footer{display:flex;justify-content:space-between;align-items:center;gap:18px}header{padding-bottom:25px;border-bottom:1px solid var(--border)}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:800;letter-spacing:-.03em}.mark{display:grid;place-items:center;width:38px;height:38px;border-radius:11px;background:var(--accent);color:#fff;font-size:22px}nav{display:flex;gap:18px;font-size:14px}.hero{padding:62px 0 45px}.eyebrow{color:var(--accent);font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}h1{font-size:clamp(30px,6vw,48px);letter-spacing:-.055em;line-height:1.35;margin:12px 0 18px}h2{font-size:21px;letter-spacing:-.03em;margin:0 0 16px}.lead{font-size:18px;color:var(--muted);max-width:640px}.note{display:inline-block;margin-top:18px;background:var(--soft);border-radius:999px;color:var(--text);font-size:13px;font-weight:700;padding:5px 13px}section{background:var(--paper);border:1px solid var(--border);border-radius:16px;padding:27px 29px;margin:20px 0}p{margin:0 0 12px}p:last-child{margin:0}ul{margin:0;padding-left:1.3em}li+li{margin-top:7px}.small{font-size:14px;color:var(--muted)}footer{border-top:1px solid var(--border);margin-top:38px;padding-top:23px;color:var(--muted);font-size:13px;flex-wrap:wrap}@media(max-width:540px){.wrap{padding:18px 16px 48px}section{padding:22px 19px}.hero{padding:43px 0 27px}nav{gap:12px}}@media(prefers-color-scheme:dark){:root{--bg:#171819;--paper:#222325;--text:#eceeef;--muted:#b0b3b6;--border:#3b3d40;--soft:#2b2d30}a{color:#80c7a2}.note{color:var(--text)}}
   </style>
+  <link rel="stylesheet" href="install.css">
 </head>
 <body>
 <div class="wrap">
-  <header><a class="brand" href="./"><span class="mark" aria-hidden="true">L</span><span>Library Feed</span></a><nav aria-label="ページ内案内"><a href="#about">概要</a><a href="privacy.html">プライバシー</a></nav></header>
+  <header><a class="brand" href="./"><img class="brand-logo" src="images/brand.png" width="38" height="38" alt=""><span>Library Feed</span></a><nav aria-label="ページ内案内"><a href="#about">概要</a><a href="privacy.html">プライバシー</a></nav></header>
   <main>
     <div class="hero"><div class="eyebrow">Library Feed</div><h1>好きな作品の更新を、<br>ひとつの場所に。</h1><p class="lead">漫画やサイトの更新をまとめて確認。WindowsのChrome・Edge・Vivaldiで使えます。</p><a class="download" id="download" href="https://github.com/Hiroyamahiro/libraryfeed/releases">ダウンロードページを開く</a><p class="small" id="download-status" aria-live="polite">テスト版・無料</p></div>
-    <section id="install"><h2>はじめかた</h2><ol class="steps"><li><strong>ZIPを解凍する</strong><br>右クリック →「すべて展開」。展開したフォルダーは、使い続ける場所へ置きます。</li><li><strong>ブラウザの拡張機能画面を開く</strong><br>下のアドレスをコピーして、アドレスバーに貼り付けます。<div class="browser-pages"><span>Chrome：<code>chrome://extensions</code></span><span>Edge：<code>edge://extensions</code></span><span>Vivaldi：<code>vivaldi://extensions</code></span></div></li><li><strong>「デベロッパーモード」をON → フォルダーを選ぶ</strong><br>「パッケージ化されていない拡張機能を読み込む」から、展開した中の<strong>LibraryFeed</strong>を選びます。Edgeは「開発者モード」→「展開して読み込み」です。</li></ol><p class="small install-tip">ブラウザ右上の拡張機能メニューからLibrary Feedを開きます。読み込み後はフォルダーを移動・削除しないでください。</p><p class="small">Edge・VivaldiでGoogle同期を使う場合だけ、同梱の<strong>LibraryFeedSetup.exe</strong>を実行します。同期なしでも使えます。</p><p class="small">更新時は、先にバックアップ。拡張を削除せず、同じフォルダーを新版に置き換えて再読み込みします。</p></section>
+<section id="install" aria-labelledby="install-title">
+  <h2 id="install-title">はじめかた</h2>
+  <fieldset id="guide-browser" class="browser-picker"><legend>使うブラウザ</legend>
+    <label><input type="radio" name="guide-browser" value="Chrome" checked> Chrome</label>
+    <label><input type="radio" name="guide-browser" value="Edge"> Edge</label>
+    <label><input type="radio" name="guide-browser" value="Vivaldi"> Vivaldi</label>
+  </fieldset>
+  <p id="guide-current" class="sr-only" aria-live="polite"></p>
+  <noscript><p class="small">お使いのブラウザ名が付いた説明をご覧ください。</p></noscript>
+  <ol class="guide-steps">
+    <li><h3>ZIPをダウンロードして解凍</h3><p>ページ上のボタンからZIPをダウンロードし、解凍します。</p><p class="small">配布一覧が開いた場合は「LibraryFeed-…zip」を選びます。</p></li>
+    <li><h3>拡張機能の画面から読み込む</h3>
+      <p>次のアドレスをブラウザのアドレスバーに貼り付けて開きます。</p>
+      <div data-browsers="Chrome"><code class="guide-address">chrome://extensions</code><p><strong>「デベロッパーモード」をON</strong>にし、<strong>「パッケージ化されていない拡張機能を読み込む」</strong>をクリック。</p><figure class="guide-figure"><a href="images/install-chrome.png" data-guide-image aria-label="Chromeの操作画面を拡大"><img src="images/install-chrome.png" width="1040" height="600" alt="Chrome：右上のデベロッパーモードと左上の読み込みボタンが赤枠で示されています。" loading="lazy"></a><figcaption>Chrome：赤枠の箇所を操作します。クリックで拡大。</figcaption></figure></div>
+      <div data-browsers="Edge"><code class="guide-address">edge://extensions</code><p><strong>「開発者モード」をON</strong>にし、<strong>「展開して読み込み」</strong>をクリック。</p><figure class="guide-figure"><a href="images/install-edge.png" data-guide-image aria-label="Edgeの操作画面を拡大"><img src="images/install-edge.png" width="1221" height="669" alt="Edge：左下の開発者モードと右上の展開して読み込みボタンが赤枠で示されています。" loading="lazy"></a><figcaption>Edge：赤枠の箇所を操作します。クリックで拡大。</figcaption></figure></div>
+      <div data-browsers="Vivaldi"><code class="guide-address">vivaldi://extensions</code><p><strong>「デベロッパーモード」をON</strong>にし、<strong>「非パッケージ拡張機能を読み込む」</strong>をクリック。</p><figure class="guide-figure"><a href="images/install-vivaldi.png" data-guide-image aria-label="Vivaldiの操作画面を拡大"><img src="images/install-vivaldi.png" width="1090" height="561" alt="Vivaldi：右上のデベロッパーモードと左上の非パッケージ拡張機能を読み込むボタンが赤枠で示されています。" loading="lazy"></a><figcaption>Vivaldi：赤枠の箇所を操作します。クリックで拡大。</figcaption></figure></div>
+    </li>
+    <li><h3>中の「LibraryFeed」フォルダーを選ぶ</h3><p class="folder-key"><strong>選ぶのは、「LibraryFeed-…」ではなく、その中の<br class="mobile-break">「LibraryFeed」フォルダーです。</strong></p><figure class="guide-figure"><a href="images/install-folder.png" data-guide-image aria-label="読み込むLibraryFeedフォルダーの画面を拡大"><img src="images/install-folder.png" width="897" height="359" alt="親のLibraryFeed-0.5.0ではなく、その中のLibraryFeedフォルダーを読み込むよう赤枠と矢印で示されています。" loading="lazy"></a><figcaption>外側の「LibraryFeed-…」ではなく、中の赤枠のフォルダーを選びます。クリックで拡大。</figcaption></figure><p><strong>読み込み後、ブラウザ右上の拡張機能から「Library Feed」を開けば完了です。</strong></p><p class="small keep-folder">読み込んだフォルダーは、使っている間は移動・削除しないでください。</p></li>
+  </ol>
+  <div class="guide-extra"><h3>Google同期は任意です</h3><p class="small" data-browsers="Chrome">Chromeでは同梱Setupは不要です。「設定 → データ → 同期」から接続できます。</p><p class="small" data-browsers="Edge Vivaldi">Edge／Vivaldiで同期する場合だけ、同梱の <strong>LibraryFeedSetup.exe</strong> を実行し、「設定 → データ → 同期」で<strong>「Windows補助プログラム」</strong>を使います。</p></div>
+  <details class="guide-extra"><summary>補足・アップデートについて</summary><div class="small"><p>SetupやGoogle画面に警告・エラーが出た場合は、無理に進めず配布元へご連絡ください。会社・学校の管理で導入が禁止されている場合は導入を止めてください。</p><p>更新前にJSONバックアップを保存し、拡張を一時OFFにして、同じフォルダーの製品ファイルを新版へ置き換えて再読み込みします。拡張の「削除」は使いません。</p><p>詳しい手順・同期方法は、ZIP同梱の「はじめに.txt」をご覧ください。</p></div></details>
+</section>
+
+
+    <section id="usage" aria-labelledby="usage-title">
+      <h2 id="usage-title">使い方</h2>
+      <p class="small">画像はChromeの例です。</p>
+      <ol class="guide-steps usage-steps">
+        <li><div><h3>アイコンをピン留め</h3><p>ブラウザ右上の拡張機能メニューを開き、<strong>「Library Feed」のピン</strong>をクリックします。</p></div><figure class="guide-figure"><a href="images/usage-pin.png" data-guide-image aria-label="拡張機能のピン留め方法を拡大"><img src="images/usage-pin.png" width="449" height="473" alt="ブラウザ右上の拡張機能メニューと、Library Feedのピン留めボタンを赤枠で示した画面。" loading="lazy"></a><figcaption>赤枠のピンで、アイコンを固定します。クリックで拡大。</figcaption></figure></li>
+        <li><div><h3>好きな漫画を右クリックで登録</h3><p>対応サイトの作品ページを開き、右クリック → <strong>「Library Feedに登録」</strong>を選びます。</p></div><figure class="guide-figure"><a href="images/usage-register.png" data-guide-image aria-label="右クリックから作品を登録する方法を拡大"><img src="images/usage-register.png" width="437" height="615" alt="右クリックメニューの「Library Feedに登録」を赤枠で示した画面。" loading="lazy"></a><figcaption>気になる作品のページで登録。クリックで拡大。</figcaption></figure></li>
+        <li><div><h3>アイコンから更新をチェック</h3><p>固定した<strong>Library Feedのアイコン</strong>をクリックすると、登録作品の更新が開きます。</p><p class="small">画像の右上のボタンから、サイドパネルでも使えます。</p></div><figure class="guide-figure"><a href="images/usage-popup.png" data-guide-image aria-label="Library Feedのポップアップ画面を拡大"><img src="images/usage-popup.png" width="619" height="744" alt="Library Feedのアイコンをクリックして開いたポップアップ。登録作品の更新一覧とサイドパネルへの切替ボタンが見えます。" loading="lazy"></a><figcaption>登録した漫画の更新をまとめて確認。クリックで拡大。</figcaption></figure></li>
+      </ol>
+      <p class="folder-key usage-notice"><strong>漫画が更新されると、アイコンに未読数が表示されます。</strong></p>
+    </section>
+
     <section id="about"><h2>できること</h2><ul><li>登録サイトの更新チェック・新着通知</li><li>記事ごとの既読・未読管理</li><li>任意のGoogle同期・JSONバックアップ</li></ul><p class="small" style="margin-top:17px">取得範囲は配信元によって異なります。漫画本文や有料コンテンツを配信するサービスではありません。</p></section>
     <section><h2>データとプライバシー</h2><p>登録した作品・更新履歴・既読状態等はブラウザ内に保存されます。Google Driveへの同期は任意で、利用者自身のGoogleアカウントのアプリ専用領域を使用します。</p><p>データの取得・利用・保存などの詳細は、<a href="privacy.html">プライバシーポリシー</a>をご確認ください。</p></section>
     <section><h2>お問い合わせ</h2><p>Library Feedについての連絡先：<a href="mailto:hiroyamahiroshi00@gmail.com">hiroyamahiroshi00@gmail.com</a></p></section>
   </main>
   <footer><span>© 2026 Hiroyama Hiroshi. Library Feed.</span><a href="privacy.html">プライバシーポリシー</a></footer>
 </div>
+<dialog id="guide-image-viewer" class="image-viewer" aria-label="導入ガイドの画像を拡大"><button type="button" autofocus>閉じる</button><img alt=""><p></p></dialog>
 <script src="download.js" defer></script>
+<script src="install.js" defer></script>
 </body>
 </html>
