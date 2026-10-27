@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="500" viewBox="0 0 880 500" role="img" aria-labelledby="title desc">
+<title id="title">選ぶのはmanifest.jsonが入ったLibraryFeedフォルダー</title><desc id="desc">展開先の中にLibraryFeedフォルダー、LibraryFeedSetup.exe、はじめに.txtがあります。LibraryFeedの中にmanifest.jsonがあります。親フォルダーやmanifest.json単体ではなくLibraryFeedを選びます。</desc>
+<rect width="880" height="500" rx="16" fill="#f6f8f7"/>
+<g font-family="Segoe UI,Meiryo,sans-serif" fill="#1c2923">
+<text x="30" y="42" font-size="22" font-weight="700">解凍後の構成図（実画面のスクリーンショットではありません）</text>
+<text x="38" y="92" font-size="22">展開先フォルダー</text>
+<path d="M55 110V356M55 160H90M55 300H90M55 350H90M112 187V255M112 218H145M112 254H145" fill="none" stroke="#8c9d93" stroke-width="3"/>
+<rect x="86" y="128" width="372" height="58" rx="9" fill="#eaf4ee" stroke="#237a5c" stroke-width="4"/>
+<text x="105" y="165" font-size="26" font-weight="700">LibraryFeed</text>
+<text x="155" y="225" font-size="23" font-weight="700">manifest.json</text>
+<text x="155" y="262" font-size="20">assets / icons など</text>
+<text x="103" y="308" font-size="22">LibraryFeedSetup.exe</text>
+<text x="103" y="358" font-size="22">はじめに.txt など</text>
+<path d="M610 157H476m18-12-18 12 18 12" stroke="#237a5c" stroke-width="5" fill="none"/>
+<text x="625" y="149" font-size="24" font-weight="700" fill="#237a5c">このフォルダーを選択</text>
+<text x="625" y="181" font-size="18">manifest.json が入っています</text>
+<rect x="30" y="397" width="820" height="78" rx="10" fill="#eaf4ee"/>
+<text x="48" y="427" font-size="21" font-weight="700">選ぶもの：LibraryFeed フォルダー</text>
+<text x="48" y="457" font-size="19">ZIP・展開先の親フォルダー・manifest.json 単体は選びません。</text>
+</g></svg>
