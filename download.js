@@ -8,7 +8,7 @@ async function latestDownload(){
   if(!response.ok)throw Error('Release list unavailable');
   const releases=await response.json();if(!Array.isArray(releases))throw Error('Invalid release list');
   const candidates=releases.filter(r=>r&&r.draft===false&&typeof r.published_at==='string'&&Number.isFinite(Date.parse(r.published_at))&&Array.isArray(r.assets))
-   .flatMap(r=>r.assets.filter(a=>a&&a.state==='uploaded'&&typeof a.name==='string'&&/^LibraryFeed-\d+\.\d+\.\d+(?:-[\w.-]+)?\.zip$/.test(a.name)&&typeof a.browser_download_url==='string').map(a=>({release:r,asset:a})))
+   .flatMap(r=>r.assets.filter(a=>a&&a.state==='uploaded'&&typeof a.name==='string'&&/^LibraryFeed-\d+\.\d+\.\d+\.zip$/.test(a.name)&&typeof a.browser_download_url==='string').map(a=>({release:r,asset:a})))
    .filter(({asset})=>{try{const u=new URL(asset.browser_download_url);return u.origin==='https://github.com'&&!u.username&&!u.password&&u.pathname.startsWith(`/${repository}/releases/download/`);}catch{return false;}})
    .sort((a,b)=>Date.parse(b.release.published_at)-Date.parse(a.release.published_at));
   const latest=candidates[0];if(!latest){status.textContent='公開準備中';return;}
